@@ -1,0 +1,201 @@
+body{
+    background-color: #3f3f3f;
+    background-image: url("https://img.freepik.com/premium-vector/various-space-objects-pattern-with-space-black-background_606226-100.jpg");
+    backdrop-filter: blur(1.2px);
+}
+main{
+    display: flex;
+    height: 45vw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+header{
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1vw;
+
+}
+
+footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+p{
+    color: white;
+    font-size: 1vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: blink2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+h1{
+    color: #03254c;
+    -webkit-text-stroke: 4px white;
+    animation-name: blink;
+    animation-duration: 2s;
+    font-family: monospace;
+    font-size: 100px;
+}
+
+h2{
+    color:  white;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: center;
+    font-size: 35px;
+}
+
+h3{
+    color:  white;
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label{
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#criarConta{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-self: center;
+    align-self: center;
+    height: 30vw;
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    gap: 0.1vw;
+    padding: 1vw;
+    border: 4px solid ;
+    border-radius: 10px;
+    background-color: #03254c;
+    color: white;
+    transition: all 0.4s;
+    animation-name: appear;
+    animation-duration: 1s;
+}
+
+#iniciarSessao{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-self: center;
+    align-self: center;
+    border: 4px solid;
+    height: 15vw;
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    gap: 0.1vw;
+    padding: 1vw;
+    border-radius: 10px;
+    background-color: #03254c;
+    color: white;
+    transition: all 0.4s;
+    animation-name: appear;
+    animation-duration: 1s;
+}
+
+#iniciarSessao:hover{
+    transform: scale(1.2);
+    margin: 3vw;
+}
+
+#criarConta:hover{
+    transform: scale(1.2);
+    margin: 3vw;
+}
+
+input{
+    border-radius: 5px;
+    border-color: white;
+    padding: 0.4vw 0vw 0.4vw 0.3vw;
+    border: white solid;
+}
+
+input:focus{
+    border: white 4px solid;
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+#criarConta input[type="password"]{
+    margin-bottom: 1.2vw;
+}
+
+#criarConta button{
+    height: 8%;
+}
+
+button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-size: 1vw;
+    height: 20%;
+    width: 30%;
+    align-self: center;
+    border-radius: 5px;
+    border: solid white;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+button:hover{
+    transform: scale(1.1);
+}
+
+@keyframes blink{
+    0%{
+        transform: scale(1.0);
+    }
+    25%{
+        transform: scale(1.4);
+    } 
+    50%{
+        transform: scale(1.0);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+@keyframes blink2{
+    0%{
+        transform: scale(1.0);
+    }
+    25%{
+        transform: scale(1.2);
+    } 
+    50%{
+        transform: scale(1.0);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
