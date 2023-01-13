@@ -41,7 +41,7 @@ h1{
     -webkit-text-stroke: 4px white;
     animation-name: blink;
     animation-duration: 2s;
-    font-family: monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100px;
 }
 
@@ -103,12 +103,12 @@ label{
 
 #iniciarSessao:hover{
     transform: scale(1.2);
-    margin: 3vw;
+    margin: 5vw;
 }
 
 #criarConta:hover{
     transform: scale(1.2);
-    margin: 3vw;
+    margin: 5vw;
 }
 
 input{
