@@ -102,13 +102,13 @@ label{
 }
 
 #iniciarSessao:hover{
-    transform: scale(1.2);
-    margin: 5vw;
+    transform: scale(1.1);
+    margin: 2vw;
 }
 
 #criarConta:hover{
-    transform: scale(1.2);
-    margin: 5vw;
+    transform: scale(1.1);
+    margin: 2vw;
 }
 
 input{
